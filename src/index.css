@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+ 
+}
+
+.App {
+
+  margin: 0 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.header {
+text-align: center;
+margin: 0 2rem 2rem 2rem;
+border: 3px solid black;
+padding: 1rem 0 ;
+font-weight: 600;
+font-size: 1.5rem;
+
+}
+
+.studentDetails {
+
+  display: flex;
+  flex-direction:row ;
+  justify-content: space-evenly;
+}
+
+
+.addStudent {
+  min-width: 50%;
+  
+}
+
+.studentList {
+
+  min-width: auto;
+  min-height: 100vh;
+  border:2px solid black
+}
+
+.addStudentForm {
+
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+
+
+.addForm {
+
+  display: flex;
+  flex-direction: column;
+}
+
+.name input[type="text"] {
+
+  display: block;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  font-size: 150%;
+  margin: 1rem;
+  padding: 0.7rem;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 2rem;
+}
+
+.radio input[type="radio"] {
+  margin-right: 5px;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 1rem 0.25rem;
+  cursor: pointer;
+}
+
+
+.radio label {
+  margin-right: 10px;
+}
+
+.submitForm button{
+
+  height: 2rem;
+  padding: 3px;
+  margin-left: 2rem;
+  border: none;
+  cursor: pointer;
+  background-color: chocolate;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  
+}
+
+.submitForm button:hover{
+
+  background-color: green;
+  border: 3px solid black;
+
+}
+.studentTable table {
+
+  width: auto;
+  overflow-x: auto;
+  overflow-y: auto;
+  margin: 10px;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+.studentTable {
+
+  margin: 0 2rem;
+  padding-right: 1rem;
+  
+}
+
+.studentTable h1{
+
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.studentTable table thead  tr th {
+
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.studentTable table tbody tr td {
+
+font-size: 1.25rem;
+text-align: center;
+padding: 0.25rem;
+}
+
+.studentTable>table>tbody>tr>.status {
+
+ 
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  
+}
+.studentTable>table>tbody>tr>.editDelete {
+  
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  
+}
+
+.studentTable>table>tbody>tr>.status>.tick{
+
+  color: green;
+  font-size: 1.5rem;
+  padding: 2px;
+  
+}
+.studentTable>table>tbody>tr>.editDelete>.edit{
+
+  color: blue;
+  font-size: 1.5rem;
+  padding: 2px;
+  
+}
+.studentTable>table>tbody>tr>.status>.cross{
+
+  color: red;
+  font-size: 1.5rem;
+  padding: 2px;
+}
+.studentTable>table>tbody>tr>.editDelete>.trash{
+
+  color: red;
+  font-size: 1.5rem;
+  padding: 2px;
+}
+
+.ticked{
+  background-color: green;
+}
+
+.crossed{
+
+  background-color: red;
+}
+
+.editForm{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+
+.editForm input {
+
+  height: 2rem;
+  border: 1px solid blue;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.editForm button {
+
+  border: 2px solid blue;
+  padding: 3px;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.editForm button:hover,.editForm button:focus {
+
+  border-color: green;
+  background-color: yellow;
+}
+
+@media only screen and (max-width: 768px) {
+  
+  
+  .studentDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  
+
+  .studentTable table {
+    width: 100%;
+  }
+
+  .studentTable table thead {
+    display: none; 
+  }
+
+  .studentTable table tr {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  .studentTable table td {
+    display: block;
+    text-align: right;
+    padding: 0.5rem;
+  }
+  
+  .studentTable table td::before {
+    content: attr(data-label); 
+    float: left;
+    font-weight: bold;
+  }
+  .editForm{
+
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+}
