@@ -4,19 +4,11 @@ This repository contains the code for a school attendance web app built with Rea
 
 ## Table of Contents
 
-- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Features
-
-- Teacher dashboard: Teachers can log in to their accounts and access their personalized dashboard.
-- Class management: Teachers can create and manage multiple classes, add students to each class, and assign attendance for each student.
-- Attendance tracking: Teachers can mark students as present, absent, or tardy for each class session.
-- Attendance reports: The app generates attendance reports for each class, allowing teachers to easily view and analyze attendance trends.
-- Notifications: Teachers can receive notifications for students who are consistently absent or tardy.
 
 ## Installation
 
